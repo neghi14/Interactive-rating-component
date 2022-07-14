@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <script src="/js/app.js" defer></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-family: 'Roboto', sans-serif;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main>
+
+    <!-- Rating state start -->
+    <div class="container">
+      <div class="rating ">
+        <div class="star">
+          <img src="/images/icon-star.svg" alt="">
+        </div>
+        <h1 class="ratingHeader">How did we do?</h1>
+        <p class="ratingBody">
+          Please do let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!
+        </p>
+        <ul class="rateContainer">
+          <li>
+            <p>1</p>
+          </li>
+          <li>
+            <p>2</p>
+          </li>
+          <li>
+            <p>3</p>
+          </li>
+          <li>
+            <p>4</p>
+          </li>
+          <li>
+            <p>5</p>
+          </li>
+        </ul>
+        <button>Submit</button>
+      </div>
+      <div class="rating hidden" style="align-items: center; text-align: center;">
+        <img class="img" src="/images/illustration-thank-you.svg" alt="">
+        <div class="rate">
+          <p>you selected <span>  </span> out of 5 stars</p>
+        </div>
+        <h1 class="ratingHeader">Thank you!</h1>
+        <p class="ratingBody">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

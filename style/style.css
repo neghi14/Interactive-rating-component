@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* COLORS */
+
+    /* PRIMARY */
+
+    --orange: hsl(25, 97%, 53%);
+
+    /* NEUTRAL */
+
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(217, 12%, 63%);
+    --mediumGray: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    background: var(--veryDarkBlue);
+    height: 100vh;
+    
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    background-color: var(--darkBlue);
+    width: 300px;
+    padding: 25px;
+    box-shadow: 10px 0 1em  hsl(0 0% 0% / 0.13);
+}
+
+.star {
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    background-color: hsla(216, 12%, 54%, 0.15);
+    border-radius: 50%;
+}
+
+
+.ratingHeader {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.rateContainer {
+    display: flex;
+}
+
+.rateContainer li {
+    list-style: none;
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    background-color: hsla(216, 12%, 54%, 0.12);
+    background-blend-mode: darken;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.select{
+    background-color: var(--lightGray) !important;
+}
+.rateContainer li+li {
+    margin-left: auto;
+}
+.rateContainer li:hover{
+    background-color: var(--orange);
+}
+
+.ratingBody {
+    font-size: 15px;
+    color: var(--lightGray);
+}
+
+button {
+    height: 40px;
+    background-color: var(--orange);
+    border: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    box-shadow: 10px 0 1em  hsl(0 0% 0% / 0.13);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+.hidden{
+    display: none;
+}
+
+.img{
+    width: 100px;
+}
+.rate{
+    width: 180px;
+    height: 20px;
+    background-color: hsla(216, 12%, 54%, 0.12);
+    border-radius: 30px;
+    color: var(--orange);
+}
+
+.rate p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.rate span{
+    font-size: 12px;
+    font-weight: 500;
+}
